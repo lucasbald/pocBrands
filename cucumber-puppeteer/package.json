@@ -1,0 +1,83 @@
+{
+  "_from": "cucumber-puppeteer",
+  "_id": "cucumber-puppeteer@1.0.15",
+  "_inBundle": false,
+  "_integrity": "sha512-hrpXvKMa+6mHyn1dvUkI9E8Ys/4C2NTSvrQcX+XyJRnNV3Mii2x6UoMc0tOUiscd7NuDOmyDAGE6v8Fvn5UtSQ==",
+  "_location": "/cucumber-puppeteer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cucumber-puppeteer",
+    "name": "cucumber-puppeteer",
+    "escapedName": "cucumber-puppeteer",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cucumber-puppeteer/-/cucumber-puppeteer-1.0.15.tgz",
+  "_shasum": "f52953fc58584b26a3c35dc4b0d6226412958aaa",
+  "_spec": "cucumber-puppeteer",
+  "_where": "C:\\Users\\lbaldin\\repos\\ltest\\pocBrands",
+  "author": {
+    "name": "Pat Heard",
+    "email": "patrick.heard@tpsgc-pwgsc.gc.ca"
+  },
+  "bugs": {
+    "url": "https://github.com/patheard/cucumber-puppeteer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "axe-puppeteer": "^1.0.0",
+    "axe-reports": "^1.1.11",
+    "cucumber": "^5.1.0",
+    "dotenv": "^8.0.0",
+    "pixelmatch": "^5.0.0",
+    "puppeteer": "^1.16.0"
+  },
+  "deprecated": false,
+  "description": "A Node.js template for end-to-end testing your app with Cucumber.js and Puppeteer",
+  "devDependencies": {
+    "codecov": "^3.3.0",
+    "http-server": "^0.11.1",
+    "jest": "^24.7.1",
+    "snyk": "^1.2.0"
+  },
+  "files": [
+    "/features"
+  ],
+  "homepage": "https://github.com/patheard/cucumber-puppeteer#readme",
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "setupFilesAfterEnv": [
+      "./test/jest.setup.js"
+    ]
+  },
+  "keywords": [
+    "cucumber",
+    "puppeteer"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "cucumber-puppeteer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patheard/cucumber-puppeteer.git"
+  },
+  "scripts": {
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk protect",
+    "snyk-test": "snyk auth $SNYK_TOKEN && snyk test",
+    "start": "npx cucumber-js --format ./features/support/util/PrettyFormatter",
+    "test": "jest --verbose --runInBand",
+    "test-coverage": "codecov",
+    "test-server": "http-server -p 8080 ./test/html"
+  },
+  "snyk": true,
+  "version": "1.0.15"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "pocbrands",
+  "version": "1.0.0",
+  "description": "poc puppeteer brandscom",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js --require ./cucumber-puppeteer/features/**/*.js --format ./cucumber-puppeteer/features/support/util/PrettyFormatter.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber-puppeteer": "^1.0.15"
+  }
+}
